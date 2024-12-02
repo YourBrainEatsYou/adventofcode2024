@@ -1,0 +1,41 @@
+# 🎄 adventofcode2024
+
+![](https://img.shields.io/badge/day%20📅-2-blue)
+![](https://img.shields.io/badge/days%20completed-2-red)
+![](https://img.shields.io/badge/stars%20⭐-2-yellow)
+
+My advent of code C# solutions.
+
+## 🌋 Challenges:
+
+### 📖 [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1)
+
+#### Commands
+
+```
+$ cd day-01 && dotnet run
+$ cd day-01-2 && dotnet run
+```
+
+#### Solutions
+
+```
+Challenge 01: 1319616 | took 0.976ms to compute
+Challenge 02: 27267728 | took 0.774ms to compute
+```
+
+### 🦌 [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/1)
+
+#### Commands
+
+```
+$ cd day-02-1 && dotnet run
+$ cd day-02-2 && dotnet run
+```
+
+#### Solutions
+
+```
+Challenge 01: 516 | took 5ms to compute
+Challenge 02: 561 | took 7ms to compute
+```
