@@ -24,7 +24,7 @@ Challenge 01: 1319616 | took 0.976ms to compute
 Challenge 02: 27267728 | took 0.774ms to compute
 ```
 
-### 🦌 [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/1)
+### 🦌 [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)
 
 #### Commands
 
@@ -39,3 +39,18 @@ $ cd day-02-2 && dotnet run
 Challenge 01: 516 | took 5ms to compute
 Challenge 02: 561 | took 7ms to compute
 ```
+
+### 🦌 [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/3)
+
+#### Commands
+
+```
+$ cd day-03-1 && dotnet run
+```
+
+#### Solutions
+
+```
+Challenge 01: 174561379 | took 5ms to compute
+```
+
