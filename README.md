@@ -40,17 +40,19 @@ Challenge 01: 516 | took 5ms to compute
 Challenge 02: 561 | took 7ms to compute
 ```
 
-### 🦌 [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/3)
+### 🛷 [Day 3: Mull It Over](https://adventofcode.com/2024/day/3)
 
 #### Commands
 
 ```
 $ cd day-03-1 && dotnet run
+$ cd day-03-2 && dotnet run
 ```
 
 #### Solutions
 
 ```
 Challenge 01: 174561379 | took 5ms to compute
+Challenge 02: 106921067 | took 6ms to compute
 ```
 
