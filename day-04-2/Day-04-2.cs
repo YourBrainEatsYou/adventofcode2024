@@ -6,11 +6,11 @@ namespace day_04_2;
 
 public class Day_04_2 : Day
 {
-  private char[][] _input;
+  private readonly char[][] _input;
 
-  private char[][] _possibilities = [['M', 'S'], ['S', 'M']];
+  private readonly char[][] _possibilities = [['M', 'S'], ['S', 'M']];
 
-  private int[][,] _locations = [new int[,] { { -1, -1 }, { 1, 1 } }, new int[,] { { 1, -1 }, { -1, 1 } }];
+  private readonly int[][,] _locations = [new int[,] { { -1, -1 }, { 1, 1 } }, new int[,] { { 1, -1 }, { -1, 1 } }];
 
   public Day_04_2() : base("input.txt", 2)
   {
@@ -30,15 +30,10 @@ public class Day_04_2 : Day
     char target1 = _input[coordinates[1] + location[0, 1]][coordinates[0] + location[0, 0]];
     char target2 = _input[coordinates[1] + location[1, 1]][coordinates[0] + location[1, 0]];
 
-    if (
-      target1 == _possibilities[0][0] && target2 == _possibilities[0][1]
-      || target1 == _possibilities[1][0] && target2 == _possibilities[1][1]
-    )
-    {
-      return true;
-    }
 
-    return false;
+    return target1 == _possibilities[0][0] && target2 == _possibilities[0][1]
+    || target1 == _possibilities[1][0] && target2 == _possibilities[1][1];
+
   }
 
   private bool CheckForCross(int[] coordinates)

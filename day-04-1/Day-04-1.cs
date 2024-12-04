@@ -4,11 +4,11 @@ namespace day_04_1;
 
 public class Day_04_1 : Day
 {
-  private char[] _charList = ['X', 'M', 'A', 'S'];
+  private readonly char[] _charList = ['X', 'M', 'A', 'S'];
 
-  private int[][] _directions = [[1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1], [0, -1], [1, -1]];
+  private readonly int[][] _directions = [[1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1], [0, -1], [1, -1]];
 
-  private char[][] _input;
+  private readonly char[][] _input;
 
   public Day_04_1() : base("input.txt", 1)
   {
@@ -23,15 +23,19 @@ public class Day_04_1 : Day
     }
   }
 
-  private bool checkForCharList(int[] direction, int[] coordinates, int charListIndex = 0)
+  private bool IsWordPossible(int[] direction, int[] coordinates, int wordLength)
   {
-    int xAxisDestination = direction[0] * (_charList.Length - charListIndex);
-    int yAxisDestination = direction[1] * (_charList.Length - charListIndex);
+    int xAxisDestination = direction[0] * wordLength;
+    int yAxisDestination = direction[1] * wordLength;
 
     // check if its possible
-    if (
-      !Enumerable.Range(-1, _input.Length + 2).Contains(coordinates[0] + xAxisDestination)
-      || !Enumerable.Range(-1, _input[coordinates[0]].Length + 2).Contains(coordinates[1] + yAxisDestination))
+    return Enumerable.Range(-1, _input.Length + 2).Contains(coordinates[0] + xAxisDestination) &&
+    Enumerable.Range(-1, _input[coordinates[0]].Length + 2).Contains(coordinates[1] + yAxisDestination);
+  }
+
+  private bool CheckForChar(int[] direction, int[] coordinates, int charListIndex = 0)
+  {
+    if (!IsWordPossible(direction, coordinates, _charList.Length - charListIndex))
     {
       return false;
     }
@@ -49,7 +53,7 @@ public class Day_04_1 : Day
     }
 
     // prepare next run
-    return checkForCharList(
+    return CheckForChar(
       direction,
       [
         coordinates[0] + direction[0],
@@ -68,12 +72,11 @@ public class Day_04_1 : Day
     {
       for (int xAxis = 0; xAxis < _input[yAxis].Length; xAxis++)
       {
-        // if is X
         if (_input[yAxis][xAxis] == _charList[0])
         {
           foreach (int[] direction in _directions)
           {
-            result += checkForCharList(direction, [xAxis, yAxis]) ? 1 : 0;
+            result += CheckForChar(direction, [xAxis, yAxis]) ? 1 : 0;
           }
         }
       }
