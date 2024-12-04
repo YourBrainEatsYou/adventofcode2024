@@ -55,4 +55,17 @@ $ cd day-03-2 && dotnet run
 Challenge 01: 174561379 | took 5ms to compute
 Challenge 02: 106921067 | took 6ms to compute
 ```
+### 🛷 [Day 4: Ceres Search](https://adventofcode.com/2024/day/4)
+
+#### Commands
+
+```
+$ cd day-04-1 && dotnet run
+```
+
+#### Solutions
+
+```
+Challenge 01: 2534 | took 207ms to compute
+```
 
