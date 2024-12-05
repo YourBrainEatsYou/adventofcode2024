@@ -70,4 +70,16 @@ $ cd day-04-2 && dotnet run
 Challenge 01: 2534 | took 207ms to compute
 Challenge 02: 1866 | took 203ms to compute
 ```
+### 🖨️ [Day 5: Print Queue](https://adventofcode.com/2024/day/5)
 
+#### Commands
+
+```
+$ cd day-05-1 && dotnet run
+```
+
+#### Solutions
+
+```
+Challenge 01: 5955 | took 8ms to compute
+```
