@@ -1,15 +1,13 @@
 using System;
-using System.Transactions;
 using AocUtilities;
+namespace day_05_2;
 
-namespace day_05_1;
-
-public class Day_05_1 : Day
+public class Day_05_2 : Day
 {
   private readonly int[][] _rules;
   private readonly int[][] _manuals;
 
-  public Day_05_1() : base("input.txt", 1)
+  public Day_05_2() : base("input.txt", 2)
   {
     // prepare arrays
     string[] content = Content.Split("\n\n", StringSplitOptions.RemoveEmptyEntries);
@@ -56,6 +54,37 @@ public class Day_05_1 : Day
     return true;
   }
 
+
+  private int[] FixedManual(int[] manual)
+  {
+
+    List<int> manualList = new();
+    manualList.AddRange(manual);
+
+    while (!ValidateManual(manualList.ToArray()))
+    {
+      foreach (int[] rule in _rules)
+      {
+        int iLeft = manualList.IndexOf(rule[0]);
+        int iRight = manualList.IndexOf(rule[1]);
+
+        if (iLeft < 0 || iRight < 0)
+        {
+          continue;
+        }
+
+        if (iLeft > iRight)
+        {
+          int poppedItem = manualList[iLeft];
+          manualList.RemoveAt(iLeft);
+          manualList.Insert(iRight, poppedItem);
+        }
+      }
+    }
+
+    return manualList.ToArray();
+  }
+
   protected override int Solve()
   {
     int result = 0;
@@ -64,8 +93,10 @@ public class Day_05_1 : Day
     {
       if (ValidateManual(_manuals[i]))
       {
-        result += _manuals[i][(_manuals[i].Length - 1) / 2];
+        continue;
       }
+
+      result += FixedManual(_manuals[i])[(_manuals[i].Length - 1) / 2];
     }
     foreach (int[] manual in _manuals)
     {

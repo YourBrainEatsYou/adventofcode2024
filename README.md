@@ -20,7 +20,7 @@ $ cd day-01-2 && dotnet run
 #### Solutions
 
 ```
-Challenge 01: 1319616 | took 0.976ms to compute
+Challenge 01:  1319616 | took 0.976ms to compute
 Challenge 02: 27267728 | took 0.774ms to compute
 ```
 
@@ -76,10 +76,12 @@ Challenge 02: 1866 | took 203ms to compute
 
 ```
 $ cd day-05-1 && dotnet run
+$ cd day-05-2 && dotnet run
 ```
 
 #### Solutions
 
 ```
-Challenge 01: 5955 | took 8ms to compute
+Challenge 01: 5955 | took  8ms to compute
+Challenge 02: 4030 | took 13ms to comput
 ```
