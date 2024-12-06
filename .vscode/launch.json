@@ -2,11 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C#: day-05-1",
+      "name": "C#: day-06-2",
       "type": "dotnet",
       "request": "launch",
-      "projectPath": "${workspaceFolder}/day-05-1/day-05-1.csproj",
-      "launchConfigurationId": "TargetFramework=;day-05-1"
+      "projectPath": "${workspaceFolder}/day-06-2/day-06-2.csproj",
+      "launchConfigurationId": "TargetFramework=;day-06-2"
     }
   ]
 }

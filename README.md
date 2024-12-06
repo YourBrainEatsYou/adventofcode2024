@@ -55,6 +55,7 @@ $ cd day-03-2 && dotnet run
 Challenge 01: 174561379 | took 5ms to compute
 Challenge 02: 106921067 | took 6ms to compute
 ```
+
 ### 🎄 [Day 4: Ceres Search](https://adventofcode.com/2024/day/4)
 
 #### Commands
@@ -70,6 +71,7 @@ $ cd day-04-2 && dotnet run
 Challenge 01: 2534 | took 207ms to compute
 Challenge 02: 1866 | took 203ms to compute
 ```
+
 ### 🖨️ [Day 5: Print Queue](https://adventofcode.com/2024/day/5)
 
 #### Commands
@@ -84,4 +86,20 @@ $ cd day-05-2 && dotnet run
 ```
 Challenge 01: 5955 | took  8ms to compute
 Challenge 02: 4030 | took 13ms to comput
+```
+
+### 💂🏻 [Day 6: Guard Gallivant](https://adventofcode.com/2024/day/6)
+
+#### Commands
+
+```
+$ cd day-06-1 && dotnet run
+$ cd day-06-2 && dotnet run
+```
+
+#### Solutions
+
+```
+Challenge 01: 5212 | took     6ms to compute
+Challenge 01: 1767 | took 17378ms to compute
 ```
