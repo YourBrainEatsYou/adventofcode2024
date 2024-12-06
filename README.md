@@ -101,5 +101,5 @@ $ cd day-06-2 && dotnet run
 
 ```
 Challenge 01: 5212 | took     6ms to compute
-Challenge 01: 1767 | took 17378ms to compute
+Challenge 02: 1767 | took 17296ms to compute
 ```
